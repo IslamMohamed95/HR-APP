@@ -1,0 +1,4 @@
+.hovercolor:hover {
+    transition: all 1s ease-out;
+    background-color: aqua;
+}

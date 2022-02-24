@@ -1,0 +1,34 @@
+
+<form [formGroup]="employerForm" (ngSubmit)="handleAddEmployer()" class=" p-5">
+
+    <div class="mb-3">
+
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label" >First Name</label>
+            <input type="text" class="form-control"  aria-describedby="emailHelp" formControlName="firstname">
+          </div>
+      
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label" >Last Name</label>
+            <input type="text" class="form-control"  formControlName="lastname">
+          </div>
+
+    </div>
+   
+    <div class="mb-3">
+
+        <div>
+            <label for="exampleInputEmail1" class="form-label" >Age</label>
+            <input type="number" class="form-control" aria-describedby="emailHelp" formControlName="age">
+        </div>
+    
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label" >email</label>
+            <input type="email" class="form-control" formControlName="email">
+        </div>
+
+    </div>
+
+    <button class="btn btn-success">Submit</button>
+
+  </form>
